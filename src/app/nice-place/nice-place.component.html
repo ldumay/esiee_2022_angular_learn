@@ -1,12 +1,12 @@
 <div class="nice-place-item">
-    <h2>{{ title }}</h2>
-    <p>{{ description }}</p>
-    <img alt="{{ title }}" [src]="imageUrl" >
-    <p>Mise en ligne le : {{ createDate }}</p>
-    <p>Lieu : {{ location }}</p>
-    <p>Score : {{ score }}</p>
+    <h2>{{ nicePlace.title }}</h2>
+    <p>{{ nicePlace.description }}</p>
+    <img alt="{{ nicePlace.title }}" [src]="nicePlace.imageUrl" >
+    <p>Mise en ligne le : {{ nicePlace.createDate }}</p>
+    <p>Lieu : {{ nicePlace.location }}</p>
+    <p>Score : {{ nicePlace.score }}</p>
     <p>
         <button (click)="onLike()">{{ likeButtonText }}</button>
-         {{ likes }}
+         {{ nicePlace.likes }}
     </p>
 </div>

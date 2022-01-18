@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { NicePlace } from '../models/nice-place-model';
 
 @Component({
   selector: 'app-nice-place',
@@ -7,34 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NicePlaceComponent implements OnInit {
 
-  title!: string;
-  imageUrl!: string;
-  description!: string;
-  createDate!: Date;
-  location!: string;
-  score!: number;
-  likes!: number;
   likeButtonText!: string;
+
+  @Input() nicePlace!: NicePlace;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.title = "Le lace de Côme";
-    this.imageUrl = "https://esiee-it.o3digital.net/data/img/20190514_155112.resized.jpg";
-    this.description = "Le lace de Côme ....";
-    this.createDate = new Date;
-    this.location = "Italie";
-    this.score = 0.75;
-    this.likes = 3;
     this.likeButtonText = "J'aime !";
   }
 
   onLike(){
     if(this.likeButtonText === "J'aime !"){
-      this.likes++;
+      this.nicePlace.likes++;
       this.likeButtonText = "Je n'aime plus !";
     } else {
-      this.likes--;
+      this.nicePlace.likes--;
       this.likeButtonText = "J'aime !";
     }
   }
