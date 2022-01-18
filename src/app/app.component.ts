@@ -8,31 +8,41 @@ import { NicePlace } from './models/nice-place-model';
 })
 export class AppComponent implements OnInit{
   
-  myPlace!:NicePlace;
-  myPlace2!:NicePlace;
+  myPlaces!:NicePlace[];
 
   ngOnInit(): void {
     
-    this.myPlace = new NicePlace(
-      "Le lac de Côme",
-      "https://esiee-it.o3digital.net/data/img/20190514_155112.resized.jpg",
-      "Le lace de Côme ....",
-      new Date,
-      "Italie",
-      0.75,
-      3,
-      "Lac"
-    );
-
-    this.myPlace2 = new NicePlace(
-      "Le lac de Côme 2",
-      "https://esiee-it.o3digital.net/data/img/20190514_155112.resized.jpg",
-      "Le lace de Côme ....",
-      new Date,
-      "Italie",
-      0.75,
-      3,
-      ""
-    );
+    this.myPlaces = [
+      {
+        title: "Le lac de Côme 1",
+        imageUrl: "https://esiee-it.o3digital.net/data/img/20190514_155112.resized.jpg",
+        description: "Le lace de Côme ....",
+        createDate: new Date,
+        location: "Italie",
+        score: 0.75,
+        likes: 3,
+        tag: "Lac"
+      },
+      {
+        title: "Le lac de Côme 2",
+        imageUrl: "https://esiee-it.o3digital.net/data/img/20190514_155112.resized.jpg",
+        description: "Le lace de Côme ....",
+        createDate: new Date,
+        location: "Italie",
+        score: 0.75,
+        likes: 3,
+        tag: "Lac"
+      },
+      {
+        title: "Le lac de Côme 3",
+        imageUrl: "https://esiee-it.o3digital.net/data/img/20190514_155112.resized.jpg",
+        description: "Le lace de Côme ....",
+        createDate: new Date,
+        location: "Italie",
+        score: 0.75,
+        likes: 3,
+        tag: "Lac"
+      }
+    ];
   }
 }

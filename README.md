@@ -52,9 +52,25 @@ Rendu
 
 ![image_1](_img_readme/009.png)
 
-Posbbiel
+Possible
 
 ![image_1](_img_readme/010.png)
+
+## Projet - Dev dev 0.1.5
+
+Codes 
+
+Démo : `*ngFor="let myPlace of myPlaces" `
+
+![image_1](_img_readme/011.png)
+
+Rendu
+
+![image_1](_img_readme/012.png)
+
+Possible
+
+![image_1](_img_readme/013.png)
 
 ## Aide Angular
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
