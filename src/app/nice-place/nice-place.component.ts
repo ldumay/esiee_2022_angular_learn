@@ -14,6 +14,7 @@ export class NicePlaceComponent implements OnInit {
   location!: string;
   score!: number;
   likes!: number;
+  likeButtonText!: string;
 
   constructor() { }
 
@@ -25,6 +26,17 @@ export class NicePlaceComponent implements OnInit {
     this.location = "Italie";
     this.score = 0.75;
     this.likes = 3;
+    this.likeButtonText = "J'aime !";
+  }
+
+  onLike(){
+    if(this.likeButtonText === "J'aime !"){
+      this.likes++;
+      this.likeButtonText = "Je n'aime plus !";
+    } else {
+      this.likes--;
+      this.likeButtonText = "J'aime !";
+    }
   }
 
 }

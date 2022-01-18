@@ -1,5 +1,11 @@
 # Esiee 2022 Angular Learn
 
+## Projet - Init
+
+Base
+
+![image_1](_img_readme/000.png)
+
 ## Projet - Dev 0.1.1
 
 Codes 
@@ -9,6 +15,18 @@ Codes
 Rendu
 
 ![image_1](_img_readme/002.png)
+
+## Projet - Dev 0.1.2
+
+Codes 
+
+![image_1](_img_readme/003.png)
+
+Rendu
+
+![image_1](_img_readme/004.png)
+
+![image_1](_img_readme/005.png)
 
 ## Aide Angular
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.

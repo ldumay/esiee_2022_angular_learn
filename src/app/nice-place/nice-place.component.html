@@ -5,5 +5,8 @@
     <p>Mise en ligne le : {{ createDate }}</p>
     <p>Lieu : {{ location }}</p>
     <p>Score : {{ score }}</p>
-    <p>Likes : {{ likes }}</p>
+    <p>
+        <button (click)="onLike()">{{ likeButtonText }}</button>
+         {{ likes }}
+    </p>
 </div>
