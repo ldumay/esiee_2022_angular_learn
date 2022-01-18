@@ -1,12 +1,203 @@
-# Esiee 2022 Angular Learn
+# ESIEE-IT - 2022 - Angular Learn
 
-## Projet - Init
+## 1 - Angular
+
+### 1.1 - Découverte de Angular
+
+[Angular](https://angular.io/) : Google
+
+Pourquoi Angular ou React contre PHP ? => MVC (Symphony s'ésouffle)
+
+__But :__ Créer des composants réutilisable.
+
+### 1.2 - Framework vs Librairie :
+
+- Framework : tous possible
+- Librairie : ajouts d'éléments
+
+### 1.3 - Qu'est-ce que TypeScript ?
+
+TypeScript : Javascript avec une typage de donnée
+
+### 1.4 - Javascript - Lutter contre les errors réccurentes :
+
+- undefined
+- NaN
+- Machin is Function
+
+### 2 - Installation de Angular :
+
+#### 2.1 - Pré-requis :
+
+NodeJS (inclus NPM) en __LTS__ : serveur web
+
+#### 2.2 - Vérification
+
+```
+mtl@MacBook-Pro-LDumay Sites % npm -v
+8.1.4
+mtl@MacBook-Pro-LDumay Sites % node -v
+v17.2.0
+```
+
+### 3 - Installation de Angular CLI
+
+#### 3.1 - Pré-requis
+
+La dernier version __LTS__ de NodeJS
+
+#### 3.2 - Résultat
+
+```
+npm install -g @angular/cli
+```
+Résultat
+
+```
+added 183 packages, and audited 184 packages in 8s
+
+22 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+```
+
+Test
+
+```
+ng v
+```
+
+Resultat
+
+```
+Node.js version v17.2.0 detected.
+Odd numbered Node.js versions will not enter LTS status and should not be used for production. For more information, please see https://nodejs.org/en/about/releases/.
+
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+    
+
+Angular CLI: 13.1.3
+Node: 17.2.0 (Unsupported)
+Package Manager: npm 8.1.4
+OS: darwin x64
+
+Angular: 
+... 
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.1301.3 (cli-only)
+@angular-devkit/core         13.1.3 (cli-only)
+@angular-devkit/schematics   13.1.3 (cli-only)
+@schematics/angular          13.1.3 (cli-only)
+    
+Warning: The current version of Node (17.2.0) is not supported by Angular.
+```
+
+
+### 4 - Première application
+
+#### 4.1 - Création
+
+Commande
+
+```
+ng new <nom_de_projet> --style=scss --skip-tests=true
+```
+
+Resultat
+
+```
+? Would you like to add Angular routing? No
+CREATE mon_permier_projet/README.md (1062 bytes)
+CREATE mon_permier_projet/.editorconfig (274 bytes)
+CREATE mon_permier_projet/.gitignore (548 bytes)
+CREATE mon_permier_projet/angular.json (3868 bytes)
+CREATE mon_permier_projet/package.json (1082 bytes)
+CREATE mon_permier_projet/tsconfig.json (863 bytes)
+CREATE mon_permier_projet/.browserslistrc (600 bytes)
+CREATE mon_permier_projet/karma.conf.js (1435 bytes)
+CREATE mon_permier_projet/tsconfig.app.json (287 bytes)
+CREATE mon_permier_projet/tsconfig.spec.json (333 bytes)
+CREATE mon_permier_projet/.vscode/extensions.json (130 bytes)
+CREATE mon_permier_projet/.vscode/launch.json (474 bytes)
+CREATE mon_permier_projet/.vscode/tasks.json (938 bytes)
+CREATE mon_permier_projet/src/favicon.ico (948 bytes)
+CREATE mon_permier_projet/src/index.html (302 bytes)
+CREATE mon_permier_projet/src/main.ts (372 bytes)
+CREATE mon_permier_projet/src/polyfills.ts (2338 bytes)
+CREATE mon_permier_projet/src/styles.scss (80 bytes)
+CREATE mon_permier_projet/src/test.ts (745 bytes)
+CREATE mon_permier_projet/src/assets/.gitkeep (0 bytes)
+CREATE mon_permier_projet/src/environments/environment.prod.ts (51 bytes)
+CREATE mon_permier_projet/src/environments/environment.ts (658 bytes)
+CREATE mon_permier_projet/src/app/app.module.ts (314 bytes)
+CREATE mon_permier_projet/src/app/app.component.scss (0 bytes)
+CREATE mon_permier_projet/src/app/app.component.html (23332 bytes)
+CREATE mon_permier_projet/src/app/app.component.ts (223 bytes)
+✔ Packages installed successfully.
+astuce: Utilisation de 'master' comme nom de la branche initiale. Le nom de la branche
+astuce: par défaut peut changer. Pour configurer le nom de la branche initiale
+astuce: pour tous les nouveaux dépôts, et supprimer cet avertissement, lancez :
+astuce: 
+astuce:         git config --global init.defaultBranch <nom>
+astuce: 
+astuce: Les noms les plus utilisés à la place de 'master' sont 'main', 'trunk' et
+astuce: 'development'. La branche nouvellement créée peut être rénommée avec :
+astuce: 
+astuce:         git branch -m <nom>
+    Successfully initialized git.
+```
+
+#### 4.2 - Lancement
+
+Lancer cette commande dans le répertoire de l'application
+
+```
+ng serve
+```
+
+Résultat
+
+```
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files   | Names         |  Raw Size
+vendor.js             | vendor        |   1.73 MB | 
+polyfills.js          | polyfills     | 339.21 kB | 
+styles.css, styles.js | styles        | 212.99 kB | 
+main.js               | main          |  51.11 kB | 
+runtime.js            | runtime       |   6.87 kB | 
+
+                      | Initial Total |   2.32 MB
+
+Build at: 2022-01-18T10:02:13.567Z - Hash: 8bf9f7176725f5ea - Time: 7638ms
+
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+
+
+✔ Compiled successfully.
+```
+
+#### 4.3 - Accessibilité de l'application
+
+[http://localhost:4200/](http://localhost:4200/)
+
+#### 4.4 - But - Mini facebook:
+
+[https://esiee-it.o3digital.net/niceplace/](https://esiee-it.o3digital.net/niceplace/)
 
 Base
 
 ![image_1](_img_readme/000.png)
 
-## Projet - Dev 0.1.1
+#### 4.5 - Projet - Dev 0.1.1
 
 Codes 
 
@@ -16,7 +207,7 @@ Rendu
 
 ![image_1](_img_readme/002.png)
 
-## Projet - Dev 0.1.2
+#### 4.6 - Projet - Dev 0.1.2
 
 Codes 
 
@@ -28,7 +219,7 @@ Rendu
 
 ![image_1](_img_readme/005.png)
 
-## Projet - Dev dev 0.1.3
+#### 4.7 - Projet - Dev dev 0.1.3
 
 Codes 
 
@@ -38,7 +229,7 @@ Rendu
 
 ![image_1](_img_readme/007.png)
 
-## Projet - Dev dev 0.1.4
+#### 4.8 - Projet - Dev dev 0.1.4
 
 Codes 
 
@@ -56,7 +247,7 @@ Possible
 
 ![image_1](_img_readme/010.png)
 
-## Projet - Dev dev 0.1.5
+#### 4.9 - Projet - Dev dev 0.1.5
 
 Codes 
 
@@ -72,7 +263,7 @@ Possible
 
 ![image_1](_img_readme/013.png)
 
-## Projet - Dev dev 0.1.6
+#### 4.10 - Projet - Dev dev 0.1.6
 
 Codes 
 
@@ -84,9 +275,19 @@ Rendu
 
 ![image_1](_img_readme/015.png)
 
-Possible
+#### 4.11 - Projet - Dev dev 0.1.7
+
+Codes 
+
+Démo : `[ngClass]="{liked : likeButtonText == 'Je n\'aime plus !'}"`
 
 ![image_1](_img_readme/016.png)
+
+Rendu
+
+![image_1](_img_readme/017.png)
+
+---
 
 ## Aide Angular
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.

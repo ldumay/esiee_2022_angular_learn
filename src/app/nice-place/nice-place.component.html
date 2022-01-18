@@ -1,4 +1,4 @@
-<div class="nice-place-item">
+<div class="nice-place-item" [ngClass]="{liked : likeButtonText == 'Je n\'aime plus !'}">
     <h2>{{ nicePlace.title }}</h2>
     <p>{{ nicePlace.description }}</p>
     <img alt="{{ nicePlace.title }}" [src]="nicePlace.imageUrl" >
