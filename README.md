@@ -60,7 +60,7 @@ Possible
 
 Codes 
 
-Démo : `*ngFor="let myPlace of myPlaces" `
+Démo : `*ngFor="let myPlace of myPlaces"`
 
 ![image_1](_img_readme/011.png)
 
@@ -71,6 +71,22 @@ Rendu
 Possible
 
 ![image_1](_img_readme/013.png)
+
+## Projet - Dev dev 0.1.6
+
+Codes 
+
+Démo : `[ngStyle]="{ width: (nicePlace.score*100)+'px' }"`
+
+![image_1](_img_readme/014.png)
+
+Rendu
+
+![image_1](_img_readme/015.png)
+
+Possible
+
+![image_1](_img_readme/016.png)
 
 ## Aide Angular
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.

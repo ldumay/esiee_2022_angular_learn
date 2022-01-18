@@ -19,7 +19,7 @@ export class AppComponent implements OnInit{
         description: "Le lace de Côme ....",
         createDate: new Date,
         location: "Italie",
-        score: 0.75,
+        score: 0.35,
         likes: 3,
         tag: "Lac"
       },
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit{
         description: "Le lace de Côme ....",
         createDate: new Date,
         location: "Italie",
-        score: 0.75,
+        score: 0.53,
         likes: 3,
         tag: "Lac"
       }

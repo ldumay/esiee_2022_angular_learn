@@ -5,7 +5,11 @@
     <p>Mise en ligne le : {{ nicePlace.createDate }}</p>
     <p>Lieu : {{ nicePlace.location }}</p>
     <p *ngIf="nicePlace.tag">Tag : {{ nicePlace.tag }}</p>
-    <p>Score : {{ nicePlace.score }}</p>
+    <p>Score : 
+        <span class="score" [ngStyle]="{ width: (nicePlace.score*100)+'px' }">
+            {{ nicePlace.score }}
+        </span>
+    </p>
     <p>
         <button (click)="onLike()">{{ likeButtonText }}</button>
          {{ nicePlace.likes }}
