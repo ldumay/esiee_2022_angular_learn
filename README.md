@@ -38,6 +38,20 @@ Rendu
 
 ![image_1](_img_readme/007.png)
 
+## Projet - Dev dev 0.1.4
+
+Codes 
+
+Démo : `*ngIf="nicePlace.tag"`
+
+Le ngIf inclus ou pas l'élément dans le DOM.
+
+![image_1](_img_readme/008.png)
+
+Rendu
+
+![image_1](_img_readme/009.png)
+
 ## Aide Angular
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
 

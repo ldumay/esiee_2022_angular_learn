@@ -4,6 +4,7 @@
     <img alt="{{ nicePlace.title }}" [src]="nicePlace.imageUrl" >
     <p>Mise en ligne le : {{ nicePlace.createDate }}</p>
     <p>Lieu : {{ nicePlace.location }}</p>
+    <p *ngIf="nicePlace.tag">Tag : {{ nicePlace.tag }}</p>
     <p>Score : {{ nicePlace.score }}</p>
     <p>
         <button (click)="onLike()">{{ likeButtonText }}</button>

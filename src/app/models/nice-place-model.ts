@@ -1,16 +1,17 @@
 export class NicePlace{
-    title: string;
-    imageUrl: string;
-    description: string;
-    createDate: Date;
-    location: string;
-    score: number;
-    likes: number;
+    title!: string;
+    imageUrl!: string;
+    description!: string;
+    createDate!: Date;
+    location!: string;
+    score!: number;
+    likes!: number;
+    tag?: string;
 
     constructor(title:string, imageUrl:string, 
         description:string, createDate:Date, 
         location:string, score:number, 
-        likes:number){
+        likes:number, tag:string){
         
         this.title = title;
         this.imageUrl = imageUrl;
@@ -19,5 +20,6 @@ export class NicePlace{
         this.location = location;
         this.score = score;
         this.likes = likes;
+        this.tag = tag;
     }
 }
