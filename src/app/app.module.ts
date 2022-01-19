@@ -11,6 +11,8 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SingleNicePlaceComponent } from './single-nice-place/single-nice-place.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CommentaireComponent } from './commentaire/commentaire.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +22,14 @@ import { SingleNicePlaceComponent } from './single-nice-place/single-nice-place.
     HeaderComponent,
     LandingPageComponent,
     SingleNicePlaceComponent,
+    CommentaireComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     RouterModule
-  ],
+],
   providers: [
     { provide: LOCALE_ID, useValue: 'fr-FR'}
   ],

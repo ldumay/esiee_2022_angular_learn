@@ -14,4 +14,8 @@
         <button (click)="onLike()">{{ likeButtonText }}</button>
         🤟 {{ nicePlace.likes }}
     </p>
+    <h3>Commentaires</h3>
+    <div class="commentaires">
+        <p *ngFor="let commentaire of commentaires"> {{commentaire}}</p>
+    </div>
 </div>
