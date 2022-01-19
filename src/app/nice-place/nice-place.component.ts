@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NicePlace } from '../models/nice-place-model';
+import { NicePlacesServices } from '../services/nice-place-services';
 
 @Component({
   selector: 'app-nice-place',
@@ -12,7 +13,7 @@ export class NicePlaceComponent implements OnInit {
 
   @Input() nicePlace!: NicePlace;
 
-  constructor() { }
+  constructor(private nicePlacesServices: NicePlacesServices) { }
 
   ngOnInit(): void {
     this.likeButtonText = "J'aime !";
@@ -20,7 +21,7 @@ export class NicePlaceComponent implements OnInit {
 
   onLike(){
     if(this.likeButtonText === "J'aime !"){
-      this.nicePlace.likes++;
+      this.nicePlacesServices.likeNicePlaceByID(this.nicePlace.id);
       this.likeButtonText = "Je n'aime plus !";
     } else {
       this.nicePlace.likes--;

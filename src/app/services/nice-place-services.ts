@@ -8,6 +8,7 @@ import { NicePlace } from "../models/nice-place-model";
 export class NicePlacesServices{
     myPlaces: NicePlace[] = [
         {
+            id: 1,
             title: "Le lac de Côme 1",
             imageUrl: "https://esiee-it.o3digital.net/data/img/20190514_155112.resized.jpg",
             description: "Le lace de Côme ....",
@@ -18,6 +19,7 @@ export class NicePlacesServices{
             tag: "Lac"
           },
           {
+            id: 2,
             title: "Le lac de Côme 2",
             imageUrl: "https://esiee-it.o3digital.net/data/img/20190514_155112.resized.jpg",
             description: "Le lace de Côme ....",
@@ -28,6 +30,7 @@ export class NicePlacesServices{
             tag: "Lac"
           },
           {
+            id: 3,
             title: "Le lac de Côme 3",
             imageUrl: "https://esiee-it.o3digital.net/data/img/20190514_155112.resized.jpg",
             description: "Le lace de Côme ....",
@@ -37,5 +40,18 @@ export class NicePlacesServices{
             likes: 3,
             tag: "Lac"
           }
-    ]
+    ];
+
+    getAllNicePlaces(): NicePlace[]{
+        return this.myPlaces;
+    }
+
+    likeNicePlaceByID(nicePlaceId: number): void{
+        const nicePlace = this.myPlaces.find(nicePlace => nicePlace.id === nicePlaceId);
+        if(nicePlace){
+            nicePlace.likes++;
+        } else {
+            throw new Error("NicePlace not found !"); 
+        }
+    }
 }

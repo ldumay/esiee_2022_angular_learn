@@ -12,6 +12,6 @@ export class NicePlaceListComponent implements OnInit {
   constructor(private nicePlacesServices: NicePlacesServices) { }
 
   ngOnInit(): void {
-    this.myPlaces = this.nicePlacesServices.myPlaces;
+    this.myPlaces = this.nicePlacesServices.getAllNicePlaces();
   }
 }

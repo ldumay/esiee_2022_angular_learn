@@ -417,6 +417,16 @@ Codes
 
 ![image_1](_img_readme/026.png)
 
+#### 4.16 - Projet - Dev dev 0.1.14
+
+Codes 
+
+![image_1](_img_readme/027.png)
+
+Rendu 
+
+![image_1](_img_readme/028.png)
+
 ---
 
 ## Aide Angular
