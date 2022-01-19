@@ -197,6 +197,28 @@ Base
 
 ![image_1](_img_readme/000.png)
 
+---
+
+### 4 - Composants et Services
+
+#### 4.1 - Composant
+
+![Les composants](_img_readme/_000.png)
+
+#### 4.2 - Déclaration de composant
+
+```
+ng generate component <nom_du_composant>
+```
+
+ou
+
+```
+ng c c <nom_du_composant>
+```
+
+---
+
 #### 4.5 - Projet - Dev 0.1.1
 
 Codes 
