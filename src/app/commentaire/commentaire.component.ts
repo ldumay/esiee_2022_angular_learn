@@ -9,12 +9,12 @@ import { CommentairesServices } from '../services/commentaire-service';
 })
 export class CommentaireComponent implements OnInit {
 
-  commentaires!: Commentaire[];
+  commentaire!: Commentaire[];
 
   constructor(private commentairesServices: CommentairesServices) { }
 
   ngOnInit(): void {
-    this.commentaires = this.commentairesServices.getAllCommentaires();
+    this.commentaire = this.commentairesServices.getAllCommentaires();
   }
 
 }

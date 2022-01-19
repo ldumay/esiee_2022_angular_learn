@@ -36,7 +36,7 @@ export class CommentairesServices{
         return this.myCommentaires;
     }
 
-    getCommentairesByID(commentaireId: number): Commentaire{
+    getCommentaireByID(commentaireId: number): Commentaire{
         const commentaire = this.myCommentaires.find(commentaire => commentaire.id === commentaireId);
         if(!commentaire){
             throw new Error("NicePlace not found !");  
