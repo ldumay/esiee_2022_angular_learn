@@ -6,12 +6,14 @@ import { NicePlaceComponent } from './nice-place/nice-place.component';
 import { registerLocaleData } from '@angular/common';
 import * as fr from '@angular/common/locales/fr';
 import { NicePlaceListComponent } from './nice-place-list/nice-place-list.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NicePlaceComponent,
-    NicePlaceListComponent
+    NicePlaceListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule
