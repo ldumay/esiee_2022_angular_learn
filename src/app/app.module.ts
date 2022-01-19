@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { NicePlaceComponent } from './nice-place/nice-place.component';
 import { registerLocaleData } from '@angular/common';
 import * as fr from '@angular/common/locales/fr';
+import { NicePlaceListComponent } from './nice-place-list/nice-place-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NicePlaceComponent
+    NicePlaceComponent,
+    NicePlaceListComponent
   ],
   imports: [
     BrowserModule
