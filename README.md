@@ -443,6 +443,22 @@ Rendu
 
 ![image_1](_img_readme/032.png)
 
+#### 4.17 - Projet - Dev dev 0.1.18
+
+Requis à cause de la méthode de routing à la main.
+
+![image_1](_img_readme/033.png)
+
+Codes - routing
+
+![image_1](_img_readme/034.png)
+
+Rendu 
+
+![image_1](_img_readme/035.png)
+
+![image_1](_img_readme/036.png)
+
 ---
 
 ## Aide Angular

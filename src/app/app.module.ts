@@ -9,6 +9,7 @@ import { NicePlaceListComponent } from './nice-place-list/nice-place-list.compon
 import { HeaderComponent } from './header/header.component'
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing.module';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { AppRoutingModule } from './app.routing.module';
     NicePlaceComponent,
     NicePlaceListComponent,
     HeaderComponent,
+    LandingPageComponent,
   ],
   imports: [
     BrowserModule,

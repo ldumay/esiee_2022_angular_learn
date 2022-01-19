@@ -1,3 +1,7 @@
 <div class="header">
     <h1>Nice Place</h1>
+    <nav>
+        <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        <a [routerLink]="['/niceplaces']" routerLinkActive="active">Les Nice Places</a>
+    </nav>
 </div>
