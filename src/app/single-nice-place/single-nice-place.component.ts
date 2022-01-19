@@ -19,7 +19,7 @@ export class SingleNicePlaceComponent implements OnInit {
 
   ngOnInit(): void {
     const nicePlaceId = parseInt(this.route.snapshot.params['id']);
-    this.nicePlace = this.nicePlacesServices.getNicePlaceID(nicePlaceId);
+    this.nicePlace = this.nicePlacesServices.getNicePlaceByID(nicePlaceId);
     this.likeButtonText = "J'aime !";
   }
 

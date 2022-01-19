@@ -46,7 +46,7 @@ export class NicePlacesServices{
         return this.myPlaces;
     }
     
-    getNicePlaceID(nicePlaceId: number): NicePlace{
+    getNicePlaceByID(nicePlaceId: number): NicePlace{
         const nicePlace = this.myPlaces.find(nicePlace => nicePlace.id === nicePlaceId);
         if(!nicePlace){
             throw new Error("NicePlace not found !");  
