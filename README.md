@@ -431,6 +431,18 @@ Update : dev 0.1.15
 
 ![image_1](_img_readme/029.png)
 
+#### 4.17 - Projet - Dev dev 0.1.17
+
+Codes - routing
+
+![image_1](_img_readme/030.png)
+
+Rendu 
+
+![image_1](_img_readme/031.png)
+
+![image_1](_img_readme/032.png)
+
 ---
 
 ## Aide Angular
