@@ -16,6 +16,6 @@
     </p>
     <h3>Commentaires</h3>
     <div class="commentaires">
-        <p *ngFor="let commentaire of commentaires"> {{commentaire}}</p>
+        <app-commentaire *ngFor="let commentaire of commentaires" [commentaire]="myCommentaires"></app-commentaire>
     </div>
 </div>

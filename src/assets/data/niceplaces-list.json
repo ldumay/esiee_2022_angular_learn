@@ -8,10 +8,7 @@
 		"location": "Italie",
 		"score": 0.75,
 		"likes": 0,
-		"tag": "Lac",
-		"commentaires": [
-			"Commentaire 1","Commentaire 2","Commentaire 3"
-		]
+		"tag": "Lac"
 	},
 	{
 		"id": 2,
@@ -21,10 +18,7 @@
 		"creationDate": "05 09 2019 12:05:23",
 		"location": "Italie",
 		"score": 0.85,
-		"likes": 12,
-		"commentaires": [
-			"Commentaire 1","Commentaire 2","Commentaire 3"
-		]
+		"likes": 12
 	},
 	{
 		"id": 3,
@@ -35,9 +29,6 @@
 		"location": "Italie",
 		"score": 0.65,
 		"likes": 5,
-		"tag": "Montagne",
-		"commentaires": [
-			"Commentaire 1","Commentaire 2","Commentaire 3"
-		]
+		"tag": "Montagne"
 	}
 ]

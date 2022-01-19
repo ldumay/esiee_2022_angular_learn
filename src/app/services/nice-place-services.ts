@@ -26,7 +26,7 @@ export class NicePlacesServices{
 					title: d.title,
 					description: d.description,
 					imageUrl: d.imageURL,
-					createDate: d.creationDate,
+					createDate: new Date(d.creationDate),
 					location: d.location,
 					score: d.score,
 					likes: d.likes,

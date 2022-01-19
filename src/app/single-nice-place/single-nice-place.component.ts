@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Commentaire } from '../models/commentaire-model';
 import { NicePlace } from '../models/nice-place-model';
+import { CommentairesServices } from '../services/commentaire-service';
 import { NicePlacesServices } from '../services/nice-place-services';
 
 @Component({
@@ -11,9 +13,7 @@ import { NicePlacesServices } from '../services/nice-place-services';
 export class SingleNicePlaceComponent implements OnInit {
 
   likeButtonText!: string;
-  commentaires!:string[];
-
-  @Input() nicePlace!: NicePlace;
+  nicePlace!: NicePlace;
 
   constructor(private nicePlacesServices: NicePlacesServices,
               private route: ActivatedRoute) { }
@@ -21,8 +21,6 @@ export class SingleNicePlaceComponent implements OnInit {
   ngOnInit(): void {
     const nicePlaceId = parseInt(this.route.snapshot.params['id']);
     this.nicePlace = this.nicePlacesServices.getNicePlaceByID(nicePlaceId);
-    this.commentaires = this.nicePlacesServices.getAllCommentsByNicePlaceID(nicePlaceId);
-    console.log(this.commentaires);
     this.likeButtonText = "J'aime !";
   }
 

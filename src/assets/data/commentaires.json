@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "nicePlaceId": 1,
+        "author": "Bill Gates",
+        "content": "Cool ce lieu.",
+        "createDate": "05 04 2019 17:23:37"
+    },
+    {
+        "id": 2,
+        "nicePlaceId": 1,
+        "author": "Claude François",
+        "content": "J'aime aussi !",
+        "createDate": "05 04 2019 18:23:37"
+    },
+    {
+        "id": 3,
+        "nicePlaceId": 1,
+        "author": "Steve Jobs",
+        "content": "Boff !",
+        "createDate": "05 04 2019 19:23:37"
+    },
+    {
+        "id": 4,
+        "nicePlaceId": 2,
+        "author": "Pierre Edouard",
+        "content": "Sympa.",
+        "createDate": "05 04 2019 17:23:37"
+    },
+    {
+        "id": 5,
+        "nicePlaceId": 3,
+        "author": "Edouard Leclerc",
+        "content": "Pas chaleureux.",
+        "createDate": "05 04 2019 17:23:37"
+    }
+]
