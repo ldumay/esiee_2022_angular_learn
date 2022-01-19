@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
 import { NicePlace } from "../models/nice-place-model";
+import { CommentsServices } from "./comment-services";
 
 const localURL: string = "assets/data/niceplaces-list.json";
 
@@ -12,7 +13,8 @@ export class NicePlacesServices{
     
 	private myPlaces!: NicePlace[];
 
-	constructor(private http: HttpClient) {
+	constructor(private http: HttpClient,
+        private commentsServices: CommentsServices) {
 		this.myPlaces = [];
 		this.getNicePlacesList();
 	}
@@ -28,8 +30,7 @@ export class NicePlacesServices{
 					createDate: new Date(d.creationDate),
 					location: d.location,
 					score: d.score,
-					likes: d.likes,
-                    comments: d.comments
+					likes: d.likes
 				});
 			}
 			console.log(this.myPlaces);
@@ -38,19 +39,6 @@ export class NicePlacesServices{
 
     getAllNicePlaces(): NicePlace[]{
         return this.myPlaces;
-    }
-
-    getAllCommentsByNicePlaceID(nicePlaceId: number): string[]{
-        const nicePlace = this.myPlaces.find(nicePlace => nicePlace.id === nicePlaceId);
-        if(!nicePlace){
-            throw new Error("NicePlace not found !");  
-        } else {
-            if(nicePlace.comments){
-                return nicePlace.comments;
-            } else {
-                return [];
-            }
-        }
     }
     
     getNicePlaceByID(nicePlaceId: number): NicePlace{

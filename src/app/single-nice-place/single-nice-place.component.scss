@@ -34,7 +34,26 @@
         font-size: 14px;
         font-weight: 500;
     }
+    button:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.75) 2px 2px 5px;
+    }
+    span{
+        font-size: 1rem;
+        a{
+            color: blue;
+            text-decoration: underline;
+        }
+        a:hover{
+            cursor: pointer;
+        }
+    }
 }
 .liked{
     background-color: #00ff0080;
+}
+.comments{
+    border: 1px solid #d3d3d3;
+    margin: 0 4%;
+    padding: 0;
 }

@@ -1,9 +1,9 @@
 <div class="comment-item">
-    <p>
-        {{ comment.content }}
-    </p>
-    <p>
-        Auteur {{ comment.author }}
-        - Date : {{ comment.createDate }}
-    </p>
+    <img alt="{{ 'logo'+comment.author }}" [src]="comment.logoUrl">
+    <div class="author">
+        <p>Auteur {{ comment.author }} - Date : {{ comment.createDate }}</p>
+    </div>
+    <div class="content">
+        <p>{{ comment.content }}</p>
+    </div>
 </div>

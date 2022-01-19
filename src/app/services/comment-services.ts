@@ -23,6 +23,7 @@ export class CommentsServices{
 				this.myComments.push({
                     id: d.id,
                     nicePlaceId: d.nicePlaceId,
+                    logoUrl: d.logoUrl,
                     author: d.author,
                     content: d.content,
                     createDate: d.createDate
@@ -34,6 +35,20 @@ export class CommentsServices{
 
     getAllComments(): Comment[]{
         return this.myComments;
+    }
+
+    getAllCommentsByNicePlaceID(nicePlaceId: number): Comment[]{
+        const commentsByNicePlaceID:Comment[] = [];
+        this.myComments.forEach(comment => {
+            console.log("comment.nicePlaceId : "+comment.nicePlaceId);
+            console.log("nicePlaceId : "+nicePlaceId);
+            if(comment.nicePlaceId==nicePlaceId){ commentsByNicePlaceID.push(comment); }
+        });
+        if(!commentsByNicePlaceID){
+            throw new Error("NicePlace not found !");  
+        } else {
+            return commentsByNicePlaceID;
+        }
     }
 
     getCommentByID(commentId: number): Comment{

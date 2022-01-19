@@ -1,12 +1,21 @@
 .comment-item{
     box-sizing: border-box;
     width: 90%;
-    margin: 20px auto;
-    padding: 10px 30px;
-    border: 2px solid #d3d3d3;
-    padding: 1%;
+    margin: 0 auto;
+    padding: 2%;
     p{
         font-weight: 300;
         font-size: 16px;
+    }
+    img{
+        max-width: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+    }
+    .author{
+        display: inline-block;
+    }
+    .content{
+        color: rgba(0, 0, 0, 0.75);
     }
 }

@@ -1,3 +1,5 @@
+import { Comment } from "./comment-model";
+
 export class NicePlace{
     id!: number;
     title!: string;
@@ -8,7 +10,7 @@ export class NicePlace{
     score!: number;
     likes!: number;
     tag?: string;
-    comments?: string[];
+    comments?: Comment[];
 
     constructor(
         id:number,
@@ -16,7 +18,7 @@ export class NicePlace{
         description:string, createDate:Date, 
         location:string, score:number, 
         likes:number, tag:string,
-        comments: string[]){
+        comments: Comment[]){
         
         this.id = id;
         this.title = title;

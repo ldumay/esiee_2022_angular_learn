@@ -1,5 +1,9 @@
 <div class="nice-place-item" [ngClass]="{liked : likeButtonText == 'Je n\'aime plus !'}">
-    <h2>{{ nicePlace.title | uppercase }}</h2>
+    <h2>{{ nicePlace.title | uppercase }}
+        <span>
+            <a [routerLink]="['/niceplaces']">retour</a>
+        </span>
+    </h2>
     <p>{{ nicePlace.description }}</p>
     <img alt="{{ nicePlace.title }}" [src]="nicePlace.imageUrl" >
     <p>Mise en ligne le : {{ nicePlace.createDate  | date:'le d MMMM yyyy : HH:mm:ss' }}</p>
@@ -15,7 +19,7 @@
         🤟 {{ nicePlace.likes }}
     </p>
     <h3>Commentaires</h3>
-    <div class="commentaires">
-        <p>In Dev</p>
+    <div class="comments">
+        <app-comment *ngFor="let nicePlaceComment of nicePlaceComments" [comment]="nicePlaceComment"></app-comment>
     </div>
 </div>
