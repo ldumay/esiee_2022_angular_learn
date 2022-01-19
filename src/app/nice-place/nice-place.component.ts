@@ -21,10 +21,10 @@ export class NicePlaceComponent implements OnInit {
 
   onLike(){
     if(this.likeButtonText === "J'aime !"){
-      this.nicePlacesServices.likeNicePlaceByID(this.nicePlace.id);
+      this.nicePlacesServices.likeNicePlaceByID(this.nicePlace.id, "like");
       this.likeButtonText = "Je n'aime plus !";
     } else {
-      this.nicePlace.likes--;
+      this.nicePlacesServices.likeNicePlaceByID(this.nicePlace.id, "unlike");
       this.likeButtonText = "J'aime !";
     }
   }

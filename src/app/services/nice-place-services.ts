@@ -46,10 +46,14 @@ export class NicePlacesServices{
         return this.myPlaces;
     }
 
-    likeNicePlaceByID(nicePlaceId: number): void{
+    likeNicePlaceByID(nicePlaceId: number, action: "like" | "unlike"): void{
         const nicePlace = this.myPlaces.find(nicePlace => nicePlace.id === nicePlaceId);
         if(nicePlace){
-            nicePlace.likes++;
+            if(action === "like"){
+                nicePlace.likes++;
+            } else {
+                nicePlace.likes--;
+            }
         } else {
             throw new Error("NicePlace not found !"); 
         }
