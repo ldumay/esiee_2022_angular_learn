@@ -287,6 +287,60 @@ Rendu
 
 ![image_1](_img_readme/017.png)
 
+#### 4.12 - Projet - Dev dev 0.1.8
+
+##### 4.12.1 - Le Pipe - Sur les titres
+
+<element> => remplacer par :
+- uppercase
+- lowercase
+- titlecase
+
+```
+<h2>{{ nicePlace.title | <element> }}</h2>
+```
+
+##### 4.12.2 - Le Pipe - Sur les dates
+
+<element> => remplacer par :
+- date
+- date:'le d MMMM yyyy : HH:mm:ss'
+
+```
+<p>Mise en ligne le : {{ nicePlace.createDate  | <element> }}</p>
+```
+
+[aide](https://angular.io/api/common/DatePipe)
+
+##### 4.12.3 - Le Pipe - Sur les dates en Fr
+
+Importer dans `app.module.ts` :
+
+```
+import { registerLocaleData } from '@angular/common';
+import * as fr from '@angular/common/locales/fr';
+```
+
+```
+providers: [
+    { provide: LOCALE_ID, useValue: 'fr-FR' }
+  ],
+```
+
+```
+export class AppModule {
+  constructor(){
+    registerLocaleData(fr.default)
+  }
+}
+```
+
+![image_1](_img_readme/018.png)
+
+Rendu
+
+![image_1](_img_readme/019.png)
+
 ---
 
 ## Aide Angular

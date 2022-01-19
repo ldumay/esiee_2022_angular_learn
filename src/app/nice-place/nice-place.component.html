@@ -1,8 +1,8 @@
 <div class="nice-place-item" [ngClass]="{liked : likeButtonText == 'Je n\'aime plus !'}">
-    <h2>{{ nicePlace.title }}</h2>
+    <h2>{{ nicePlace.title | uppercase }}</h2>
     <p>{{ nicePlace.description }}</p>
     <img alt="{{ nicePlace.title }}" [src]="nicePlace.imageUrl" >
-    <p>Mise en ligne le : {{ nicePlace.createDate }}</p>
+    <p>Mise en ligne le : {{ nicePlace.createDate  | date:'le d MMMM yyyy : HH:mm:ss' }}</p>
     <p>Lieu : {{ nicePlace.location }}</p>
     <p *ngIf="nicePlace.tag">Tag : {{ nicePlace.tag }}</p>
     <p>Score : 
