@@ -492,6 +492,16 @@ Rendu
 
 ![image_1](_img_readme/041.png)
 
+#### 4.21 - Projet - Dev dev 0.1.21
+
+Codes
+
+![image_1](_img_readme/042.png)
+
+Rendu 
+
+![image_1](_img_readme/043.png)
+
 ---
 
 ## Aide Angular

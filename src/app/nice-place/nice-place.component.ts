@@ -16,7 +16,7 @@ export class NicePlaceComponent implements OnInit {
   @Input() nicePlace!: NicePlace;
 
   constructor(private nicePlacesServices: NicePlacesServices,
-    private router: Router) { }
+              private router: Router) { }
 
   ngOnInit(): void {
     this.likeButtonText = "J'aime !";

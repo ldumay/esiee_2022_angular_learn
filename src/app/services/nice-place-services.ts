@@ -45,6 +45,15 @@ export class NicePlacesServices{
     getAllNicePlaces(): NicePlace[]{
         return this.myPlaces;
     }
+    
+    getNicePlaceID(nicePlaceId: number): NicePlace{
+        const nicePlace = this.myPlaces.find(nicePlace => nicePlace.id === nicePlaceId);
+        if(!nicePlace){
+            throw new Error("NicePlace not found !");  
+        } else {
+            return nicePlace;
+        }
+    }
 
     likeNicePlaceByID(nicePlaceId: number, action: "like" | "unlike"): void{
         const nicePlace = this.myPlaces.find(nicePlace => nicePlace.id === nicePlaceId);
