@@ -469,6 +469,29 @@ Rendu
 
 ![image_1](_img_readme/038.png)
 
+#### 4.20 - Projet - Dev dev 0.1.20
+
+Requis à cause de la méthode de routing à la main.
+
+![image_1](_img_readme/039.png)
+
+Création d'un nouveau composant :
+
+```
+ng g c single-nice-place --module app
+```
+
+1. Move nice-place To single-nice-place
+2. Création du lien entre la liste de nice-place et single-nice-place
+
+Codes
+
+![image_1](_img_readme/040.png)
+
+Rendu 
+
+![image_1](_img_readme/041.png)
+
 ---
 
 ## Aide Angular

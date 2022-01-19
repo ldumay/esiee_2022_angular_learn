@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component'
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { SingleNicePlaceComponent } from './single-nice-place/single-nice-place.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     NicePlaceListComponent,
     HeaderComponent,
     LandingPageComponent,
+    SingleNicePlaceComponent,
   ],
   imports: [
     BrowserModule,
