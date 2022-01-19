@@ -1,6 +1,5 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
-import { Commentaire } from "../models/commentaire-model";
 import { NicePlace } from "../models/nice-place-model";
 
 const localURL: string = "assets/data/niceplaces-list.json";
@@ -30,7 +29,7 @@ export class NicePlacesServices{
 					location: d.location,
 					score: d.score,
 					likes: d.likes,
-                    commentaires: d.commentaires
+                    comments: d.comments
 				});
 			}
 			console.log(this.myPlaces);
@@ -46,8 +45,8 @@ export class NicePlacesServices{
         if(!nicePlace){
             throw new Error("NicePlace not found !");  
         } else {
-            if(nicePlace.commentaires){
-                return nicePlace.commentaires;
+            if(nicePlace.comments){
+                return nicePlace.comments;
             } else {
                 return [];
             }

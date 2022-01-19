@@ -8,7 +8,7 @@ export class NicePlace{
     score!: number;
     likes!: number;
     tag?: string;
-    commentaires?: string[];
+    comments?: string[];
 
     constructor(
         id:number,
@@ -16,7 +16,7 @@ export class NicePlace{
         description:string, createDate:Date, 
         location:string, score:number, 
         likes:number, tag:string,
-        commentaires: string[]){
+        comments: string[]){
         
         this.id = id;
         this.title = title;
@@ -27,6 +27,6 @@ export class NicePlace{
         this.score = score;
         this.likes = likes;
         this.tag = tag;
-        this.commentaires = commentaires;
+        this.comments = comments;
     }
 }

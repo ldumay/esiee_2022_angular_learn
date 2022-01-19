@@ -12,7 +12,8 @@ import { AppRoutingModule } from './app.routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SingleNicePlaceComponent } from './single-nice-place/single-nice-place.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CommentaireComponent } from './commentaire/commentaire.component';
+import { CommentComponent } from './comment/comment.component';
+import { CommentsListComponent } from './comments-list/comments-list.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CommentaireComponent } from './commentaire/commentaire.component';
     HeaderComponent,
     LandingPageComponent,
     SingleNicePlaceComponent,
-    CommentaireComponent,
+    CommentComponent,
+    CommentsListComponent,
   ],
   imports: [
     BrowserModule,

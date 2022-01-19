@@ -1,4 +1,4 @@
-export class Commentaire{
+export class Comment{
     id!: number;
     nicePlaceId!: number;
     author!: string;

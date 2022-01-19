@@ -1,8 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Commentaire } from '../models/commentaire-model';
 import { NicePlace } from '../models/nice-place-model';
-import { CommentairesServices } from '../services/commentaire-service';
+import { CommentsServices } from '../services/comment-services';
 import { NicePlacesServices } from '../services/nice-place-services';
 
 @Component({

@@ -8,7 +8,9 @@ import { NicePlacesServices } from '../services/nice-place-services';
   styleUrls: ['./nice-place-list.component.scss']
 })
 export class NicePlaceListComponent implements OnInit {
+
   myPlaces!:NicePlace[];
+  
   constructor(private nicePlacesServices: NicePlacesServices) { }
 
   ngOnInit(): void {
