@@ -341,6 +341,34 @@ Rendu
 
 ![image_1](_img_readme/019.png)
 
+##### 4.12.4 - Le Pipe - Sur les nombres
+
+<element> => remplacer par :
+- number
+- number: '1.0-0'
+
+```
+{{ nicePlace.score | number: '1.0-0' }}
+```
+
+Rendu
+
+![image_1](_img_readme/020.png)
+
+##### 4.12.5 - Le Pipe - Sur les pourcentages
+
+<element> => remplacer par :
+- percent
+- percent: '1.0-0'
+
+```
+{{ nicePlace.score | percent: '1.0-0' }}
+```
+
+Rendu
+
+![image_1](_img_readme/021.png)
+
 ---
 
 ## Aide Angular

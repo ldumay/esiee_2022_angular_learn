@@ -7,7 +7,7 @@
     <p *ngIf="nicePlace.tag">Tag : {{ nicePlace.tag }}</p>
     <p>Score : 
         <span class="score" [ngStyle]="{ width: (nicePlace.score*100)+'px' }">
-            {{ nicePlace.score }}
+            {{ nicePlace.score | percent: '1.0-0' }}
         </span>
     </p>
     <p>
