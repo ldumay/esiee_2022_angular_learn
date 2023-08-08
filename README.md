@@ -1,6 +1,6 @@
 # ESIEE-IT - 2022 - Angular Learn
 
-> 🚨 **Projet déplacer ici ▶▶ : [https://github.com/2023-esiee-projectlab/esiee-it_2022_angular_learn](https://github.com/2023-esiee-projectlab/esiee-it_2022_angular_learn)**
+> 🚨 **Projet déplacer ici ▶▶ : [https://github.com/2023-esiee-projectlab/M1_angular_learn](https://github.com/2023-esiee-projectlab/M1_angular_learn)**
 
 ## 1 - Angular
 
