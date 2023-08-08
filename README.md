@@ -1,5 +1,7 @@
 # ESIEE-IT - 2022 - Angular Learn
 
+> 🚨 **Projet déplacer ici ▶▶ : [https://github.com/2023-esiee-projectlab/esiee-it_2022_angular_learn](https://github.com/2023-esiee-projectlab/esiee-it_2022_angular_learn)**
+
 ## 1 - Angular
 
 ### 1.1 - Découverte de Angular
